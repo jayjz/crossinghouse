@@ -7,8 +7,11 @@ successful task without reducing reliability.
 
 ## Status
 
-**Implemented:** repository foundation and development tooling only. There are
-no model-provider integrations, orchestration runtime, or run artifact writer.
+**Implemented:** a provider-neutral typed kernel for immutable task contracts,
+deterministic LOW/MEDIUM/HIGH routing, bounded mock execution, independent
+deterministic verification, lifecycle transitions, and retry/escalation decisions.
+There are no model-provider integrations, orchestration runtime, or run artifact
+writer.
 
 **Intended design:** task planning, bounded task contracts, deterministic routing,
 execution, evidence capture, verification, and conditional escalation are separate

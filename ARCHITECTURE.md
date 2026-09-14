@@ -31,6 +31,14 @@ does not establish verification success.
 Provider SDK types belong only in provider adapters at system edges. Core contracts
 must use provider-neutral types and receive dependencies explicitly.
 
+## P1 kernel
+
+**Implemented:** `contracts`, `routing`, `execution`, `verification`, and
+`escalation` provide a small in-memory, provider-neutral kernel. The mock executor
+simulates only contract-authorized file operations; deterministic verification is
+independent from its completion claim. The kernel deliberately has no run-artifact
+writer or provider adapter.
+
 ## Run artifacts
 
 **Intended, not implemented:** each run will have `.runs/<run-id>/` artifacts for
