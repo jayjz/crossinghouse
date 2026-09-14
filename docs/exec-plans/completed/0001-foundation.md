@@ -1,8 +1,8 @@
-# 0001 — P1 typed kernel foundation
+# 0001 - P1 typed kernel foundation
 
 ## Status
 
-Planned. P0 creates repository and tooling only; this plan does not authorize
+Completed on 2026-09-14. P1 remains provider-neutral and does not authorize
 provider integrations.
 
 ## Scope
@@ -17,8 +17,16 @@ provider integrations.
 
 ## Verification
 
-Run the repository's required Ruff, formatting, mypy, and pytest commands. Tests
-must distinguish execution completion from deterministic verification success.
+Completed successfully:
+
+- `uv sync --locked`
+- `uv run ruff check .`
+- `uv run ruff format --check .`
+- `uv run mypy src`
+- `uv run pytest` - 22 passed
+- `git diff --check`
+
+Tests distinguish execution completion from deterministic verification success.
 
 ## Non-goals
 
